@@ -7,21 +7,25 @@ enthält keinen Programmcode.
 Herkunft
 --------
 
-Alle Wörterbücher stammen vom FreeDict-Projekt (https://freedict.org) und
-wurden für dieses Repository lediglich umgewandelt: aus dem dictd-Format in
-SQLite, ergänzt um eine Niveau-Einstufung aus Worthäufigkeiten. Die
-lexikalischen Inhalte sind unverändert.
+Dieses Repository enthält 32 abgeleitete Wörterbuchpakete:
 
-Die genaue Ausgabe, das Erscheinungsdatum und der jeweilige Betreuer stehen
-für jedes Paket in der Datei packs.json im Feld "source".
+- 31 Pakete stammen vom FreeDict-Projekt (https://freedict.org) und wurden
+  für dieses Repository aus dem dictd/TEI-Ausgangsmaterial in SQLite
+  umgewandelt.
+- Das Paket "ron-eng" stammt aus der englischen Wiktionary-Ausgabe, extrahiert
+  über Wiktextract/kaikki.org.
+
+Die Pakete wurden um eine Niveau-Einstufung aus Worthäufigkeiten ergänzt. Die
+genaue Ausgabe, das Erscheinungsdatum, die Quelle und der jeweilige Betreuer
+stehen für jedes Paket in der Datei packs.json im Feld "source".
 
 Lizenz der Wörterbücher
 -----------------------
 
-FreeDict-Wörterbücher stehen unter der GNU General Public License, Version 3
-oder später, einige unter der GNU Affero General Public License bzw. unter
-CC-BY-SA. Die Umwandlung ändert daran nichts: diese Dateien stehen unter
-denselben Bedingungen wie die Vorlagen.
+FreeDict-Wörterbücher stehen je nach Ausgangswörterbuch unter freien Lizenzen,
+meist unter der GNU General Public License, teilweise unter der GNU Affero
+General Public License oder unter CC-BY-SA. Die Umwandlung ändert daran nichts:
+diese Dateien stehen unter denselben Bedingungen wie die jeweiligen Vorlagen.
 
     Diese Daten sind freie Daten: Sie dürfen sie weitergeben und verändern,
     unter den Bedingungen der GNU General Public License, wie von der Free
@@ -33,10 +37,17 @@ denselben Bedingungen wie die Vorlagen.
 
 Volltext: https://www.gnu.org/licenses/gpl-3.0.html
 
+Das Paket "ron-eng" enthält aus Wiktionary abgeleitete Daten und steht unter
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+
+Volltext: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Quelle: https://en.wiktionary.org/
+Extraktion: https://kaikki.org/ / Wiktextract
+
 Namensnennung
 -------------
 
-Wer diese Pakete weitergibt, muss FreeDict als Quelle nennen und die Angaben
+Wer diese Pakete weitergibt, muss die jeweilige Quelle nennen und die Angaben
 aus packs.json mitliefern. Der Vokabeltrainer zeigt sie in der App hinter dem
 Info-Knopf am jeweiligen Sprachpaket an.
 
@@ -45,6 +56,9 @@ Weitere Bestandteile der App
 
 Lautschrift: ipa-dict (MIT-Lizenz)
 Worthäufigkeiten: wordfreq (MIT-Lizenz)
+
+Diese sind nicht Teil dieses Repositories, gehen aber in die Niveau-Einstufung
+der Pakete ein.
 
 Diese sind nicht Teil dieses Repositories, gehen aber in die Niveau-Einstufung
 der Pakete ein.
